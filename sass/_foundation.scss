@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+/*------------------------------------------
+  * font
+ ____________________________________________*/
+@font-face {
+  font-family: 'Lato Light';
+  font-weight: 300;
+  src: url("../fonts/Lato/Lato-Light.ttf") format("ttf");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Noto Sans JP Light';
+  font-weight: 300;
+  src: url("../font/NotoSansJP-Light.otf") format("oft");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Serif JP';
+  font-weight: 300;
+  src: url("../font/NotoSerifJP-Light.otf") format("oft");
+  font-display: swap;
+}
+
+body {
+  font-family: 'Lato Light', 'Lato', Helvetica, Arial, 'Noto Sans JP Light', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #707070;
+  background: #FFFEFD;
+  font-size: 1.4rem;
+  line-height: 1.6;
+
+}
+
+// さわらび明朝
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap&subset=japanese');
+
+a {
+  text-decoration: none;
+}
+
+$mq-breakpoints: ("xs": 320px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px);
+
+@mixin mq($breakpoint: medium) {
+  @media screen and (min-width: #{map-get($mq-breakpoints,$breakpoint)}) {
+    @content;
+  }
+}
+
+$mq-max-breakpoints: ("xs": 320px,
+  "sm": 575.98px,
+  "md": 767.98px,
+  "lg": 991.98px,
+  "xl": 1199.98px);
+
+@mixin mqmax($max-breakpoint: medium) {
+  @media screen and (max-width: #{map-get($mq-max-breakpoints,$max-breakpoint)}) {
+    @content;
+  }
+}
+
+.headline {
+  font-size: 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 1.4rem;
+}
+
+ul,
+ol,
+dl {
+  list-style-type: none;
+}
+
+
+// ### LINK ###
+a:link {
+  color: #c7be8f;
+}
+
+a:visited {
+  color: #c7be8f;
+}
+
+a:hover {
+  color: #c7be8f;
+}
+
+a:active {
+  color: #c7be8f;
+}

@@ -1,0 +1,78 @@
+.l-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__logo {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include mq(md) {
+    padding: 20px 24px;
+  }
+}
+
+.l-Nav {
+  width: 100%;
+  // add class ↓
+  height: 100vh;
+  top: 71px;
+  left: 0;
+  z-index: 20;
+  display: none;
+  background: #FFFEFD;
+  // transform: translateY(-124%);
+  transform: translateX(-100%);
+  transition: all 300ms ease-in-out;
+
+  &.active {
+    position: fixed;
+    display: block;
+    // transform: translateY(0);
+    transform: translateX(0);
+    transition: all 300ms ease-in-out;
+  }
+
+  @include mq(md) {
+    display: flex;
+    transform: translateX(0);
+    height: 71px;
+    display: block;
+    z-index: 1;
+    width: calc(100% - 200px);
+
+  }
+}
+
+.l-main {
+  padding: 0 15px;
+
+  @include mq(md) {
+    padding: 0 24px;
+  }
+
+  @include mq(lg) {
+    padding: 0;
+    max-width: 1020px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.l-footer {
+  padding: 0 15px;
+
+  @include mq(md) {
+    padding: 0 24px;
+  }
+
+  @include mq(lg) {
+    padding: 0;
+    max-width: 1020px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

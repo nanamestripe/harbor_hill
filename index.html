@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>横浜・元町 港の見える丘カフェ</title>
+    <link rel="stylesheet" href="css/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/jnn4uri.css" />
+  </head>
+  <body>
+    <header class="l-header p-header">
+      <div class="l-header__logo p-header__logo">
+        <h1 class="headline">港の見える丘カフェ</h1>
+      </div>
+      <nav class="l-Nav">
+        <ul class="p-navigation">
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#lunch">ランチメニュー</a></li>
+          <li><a href="#cafe">カフェメニュー</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#contact">ご予約</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- END //.l-header -->
+
+    <button type="button" class="c-hamburger">
+      <span class="c-hamburger__bar"></span>
+      <span class="c-hamburger__bar"></span>
+      <span class="c-hamburger__bar"></span>
+    </button>
+    <section class="p-mainvisual">
+      <!-- <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="images/port_sm.jpg 375w"
+          sizes="100vw"
+        />
+        <source
+          srcset="images/port_md.jpg 768w
+        images/port_lg.jpg 1020w"
+          sizes="(max-width:1280px) 100vw
+        505px"
+        />
+        <img src="images/port_lg.jpg" alt="港のイメージ" />
+      </picture> -->
+      <picture>
+        <source
+          media="(max-width: 576px)"
+          srcset="images/port_sm.jpg 375w"
+          sizes="100vw"
+        />
+        <source
+          media="(max-width: 768px)"
+          srcset="images/port_md.jpg 768w"
+          sizes="100vw"
+        />
+        <source
+          media="(max-width: 1020px)"
+          srcset="images/port_lg.jpg 1020w"
+          sizes="100vw"
+        />
+        <img src="images/port_lg.jpg" alt="カフェイメージ画像" />
+      </picture>
+    </section>
+    <section class="p-info">
+      <h2 class="heading">お知らせ</h2>
+      <p class="text date">20190712</p>
+      <p class="text">
+        7月末までの限定メニュー、おかげさまで大変ご好評を頂いております。
+      </p>
+    </section>
+    <main class="l-main">
+      <section class="p-recommend">
+        <h2 class="heading">オススメメニュー</h2>
+
+        <!-- Slider main container -->
+        <article class="p-recommend__image swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="images/menu_sm.jpg 345w"
+                  sizes="100vw"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="images/menu_md.jpg 240w"
+                  sizes="33vw"
+                />
+                <source
+                  media="(max-width: 1020px)"
+                  srcset="images/menu_lg.jpg 505w"
+                  sizes="50vw"
+                />
+                <img src="images/menu_lg.jpg" alt="カフェイメージ画像" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="images/pasta_sm.jpg 345w"
+                  sizes="100vw"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="images/pasta_md.jpg 240w"
+                  sizes="33vw"
+                />
+                <source
+                  media="(max-width: 1020px)"
+                  srcset="images/pasta_lg.jpg 505w"
+                  sizes="50vw"
+                />
+                <img src="images/pasta_lg.jpg" alt="カフェイメージ画像" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="images/pizza_sm.jpg 345w"
+                  sizes="100vw"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="images/pizza_md.jpg 240w"
+                  sizes="33vw"
+                />
+                <source
+                  media="(max-width: 1020px)"
+                  srcset="images/pizza_lg.jpg 505w"
+                  sizes="50vw"
+                />
+                <img src="images/pizza_lg.jpg" alt="カフェイメージ画像" />
+              </picture>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </article>
+      </section>
+      <section id="menu" class="p-menu">
+        <article class="p-menu__image fadein">
+          <picture>
+            <source
+              media="(max-width: 576px)"
+              srcset="images/kitchen-sm.jpg 345w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="images/kitchen-md.jpg 720w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 1020px)"
+              srcset="images/kitchen-lg.jpg 680w"
+              sizes="67vw"
+            />
+            <img src="images/kitchen-lg.jpg" alt="キッチンイメージ画像" />
+          </picture>
+        </article>
+        <article class="p-menu__content">
+          <div class="p-menu__content--inner">
+            <h2 class="heading">メニュー</h2>
+            <p class="text">
+              食材の美味しさを最大限に活かしたフランス料理。日本各地はもちろんのこと世界中から取り寄せた素晴らしい食材の旨みや力強さを極限まで際立せ料理という芸術でお届けいたします
+            </p>
+            <p class="more">
+              <a href="#">詳しくはこちら<i class="fas fa-chevron-right"></i></a>
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- END /.p-menu -->
+      <section id="lunch" class="p-lunch">
+        <article class="p-lunch__image fadein">
+          <picture>
+            <source
+              media="(max-width: 576px)"
+              srcset="images/lunch-sm.jpg 345w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="images/lunch-md.jpg 720w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 1020px)"
+              srcset="images/lunch-lg.jpg 680w"
+              sizes="67vw"
+            />
+            <img src="images/lunch-lg.jpg" alt="キッチンイメージ画像" />
+          </picture>
+        </article>
+        <article class="p-lunch__content">
+          <div class="p-lunch__content--inner">
+            <h2 class="heading">ランチ</h2>
+            <p class="text">
+              食材の美味しさを最大限に活かしたフランス料理。日本各地はもちろんのこと世界中から取り寄せた素晴らしい食材の旨みや力強さを極限まで際立せ料理という芸術でお届けいたします
+            </p>
+            <p class="more">
+              <a href="#">詳しくはこちら<i class="fas fa-chevron-right"></i></a>
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- END /.p-lunch -->
+      <section id="cafe" class="p-cafe">
+        <article class="p-cafe__image fadein">
+          <picture>
+            <source
+              media="(max-width: 576px)"
+              srcset="images/cafe-sm.jpg 345w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="images/cafe-md.jpg 720w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 1020px)"
+              srcset="images/cafe-lg.jpg 680w"
+              sizes="67vw"
+            />
+            <img src="images/cafe-lg.jpg" alt="カフェイメージ画像" />
+          </picture>
+        </article>
+        <article class="p-cafe__content">
+          <div class="p-cafe__content--inner">
+            <h2 class="heading">カフェ</h2>
+            <p class="text">
+              食材の美味しさを最大限に活かしたフランス料理。日本各地はもちろんのこと世界中から取り寄せた素晴らしい食材の旨みや力強さを極限まで際立せ料理という芸術でお届けいたします
+            </p>
+            <p class="more">
+              <a href="#">詳しくはこちら<i class="fas fa-chevron-right"></i></a>
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- END /.p-cafe -->
+
+      <section id="access" class="p-access">
+        <article class="p-access__image">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13002.335828530648!2d139.6544534!3d35.4403349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77c48d70f704f75f!2z5riv44Gu6KaL44GI44KL5LiY5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1564030836020!5m2!1sja!2sjp"
+            width="510"
+            height="510"
+            frameborder="0"
+            style="border:0;
+              width:100%;
+              filter:grayscale(100%);-webkit-filter:grayscale(100%)"
+            allowfullscreen
+          ></iframe>
+        </article>
+        <article class="p-access__content">
+          <h2 class="heading">アクセス</h2>
+          <h3 class="subheading"><i class="fas fa-home"></i> 住所</h3>
+          <p>横浜市西区みなとみらい1丁目</p>
+          <h3 class="subheading">
+            <i class="fas fa-car"></i> お車でお越しの場合
+          </h3>
+          <p>高速湾岸線・狩場方面から　高速神奈川3号狩場線新山下出口</p>
+          <h3 class="subheading">
+            <i class="fas fa-subway"></i> 電車·バスでお越しの場合
+          </h3>
+          <p>
+            みなとみらい線元町・中華街駅からあかいくつ・中華街元町ルート(バス)に乗り換え。元町入口バス停から港の見える丘公園前
+          </p>
+        </article>
+      </section>
+      <!-- END /.p-access -->
+      <section id="contact" class="p-contact">
+        <article class="p-contact__image">
+          <picture>
+            <source
+              media="(max-width: 576px)"
+              srcset="images/contact-sm.jpg 345w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="images/contact-md.jpg 720w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 1020px)"
+              srcset="images/contact-lg.jpg 680w"
+              sizes="67vw"
+            />
+            <img src="images/contact-lg.jpg" alt="カフェイメージ画像" />
+          </picture>
+        </article>
+        <article class="p-contact__content">
+          <div class="p-contact__content--inner">
+            <h2 class="heading">ご予約</h2>
+            <p class="text">
+              ご予約については恐れ入りますが、こちらのフォームボタンからお願いいたします。ご来店のお客さまへのご対応もございます為、迅速に出来かねる場合もございます。予めご了承くださいませ。
+            </p>
+            <div class="flatButton">
+              <a href="#" class="btn">ご予約はこちら</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- END /.p-contact -->
+    </main>
+
+    <footer class="l-footer">
+      <article class="p-footer">
+        <ul class="p-footer__menu">
+          <li class="p-footer__list"><a href="">プライバシーポリシー</a></li>
+          <li class="p-footer__list"><a href="">よくあるご質問</a></li>
+          <li class="p-footer__list"><a href="">お問い合わせ</a></li>
+          <li class="p-footer__list">
+            <a href=""
+              ><picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="images/logo-sm.jpg 345w"
+                  sizes="100vw"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="images/logo-md.jpg 180w"
+                  sizes="100vw"
+                />
+                <source
+                  media="(max-width: 1020px)"
+                  srcset="images/logo-lg.jpg 255w"
+                  sizes="100vw"
+                />
+                <img
+                  src="images/logo-lg.jpg"
+                  alt="カフェイメージ画像"
+                /> </picture
+            ></a>
+          </li>
+        </ul>
+      </article>
+    </footer>
+    <script src="dist/bundle.js"></script>
+    <script src="dist/jquery.min.js"></script>
+    <script src="dist/hamburger.js"></script>
+    <script src="dist/scrollin.js"></script>
+    <script src="dist/smooth.js"></script>
+    <script src="dist/swiper.js"></script>
+    <script src="dist/swiper_responsive.js"></script>
+  </body>
+</html>
