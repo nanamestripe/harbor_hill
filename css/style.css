@@ -11,30 +11,30 @@ html {
   * font
  ____________________________________________*/
 @font-face {
-  font-family: 'Lato Light';
+  font-family: "Lato Light";
   font-weight: 300;
   src: url("../fonts/Lato/Lato-Light.ttf") format("ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Noto Sans JP Light';
+  font-family: "Noto Sans JP Light";
   font-weight: 300;
   src: url("../font/NotoSansJP-Light.otf") format("oft");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Noto Serif JP';
+  font-family: "Noto Serif JP";
   font-weight: 300;
   src: url("../font/NotoSerifJP-Light.otf") format("oft");
   font-display: swap;
 }
 
 body {
-  font-family: 'Lato Light', 'Lato', Helvetica, Arial, 'Noto Sans JP Light', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: "Lato Light", "Lato", Helvetica, Arial, "Noto Sans JP Light", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   color: #707070;
-  background: #FFFEFD;
+  background: #fffefd;
   font-size: 1.4rem;
   line-height: 1.6;
 }
