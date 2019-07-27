@@ -20,9 +20,9 @@
     "webpack": "^4.37.0",
     "webpack-stream": "^5.2.1"
   },
-  "browserlist": [
+  "browserslist": [
     "last 2 versions",
-    "ie >= 11",
+    "IE >= 11",
     "Android >= 4"
   ]
 }
