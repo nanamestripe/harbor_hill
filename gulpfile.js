@@ -7,6 +7,8 @@ const postcss = require("gulp-postcss");
 //autoprefixerプラグインの読み込み
 const autoprefixer = require("autoprefixer");
 //browserSyncプラグインの読み込み
+const sourcemaps = require("gulp-sourcemaps");
+//ソースマップを書き出すためのsourcemapの読み込み
 const browserSync = require("browser-sync");
 //webpackプラグインの読み込み
 const webpackStream = require("webpack-stream");
@@ -33,6 +35,16 @@ gulp.task('sass', function () {
         // (これがないと自動的に止まってしまう)
         .on('error', sass.logError)
       )
+      .pipe(sourcemaps.init())
+      .pipe(postcss([
+        autoprefixer({
+          // ☆IEは11以上、Androidは4.4以上
+          // その他は最新2バージョンで必要なベンダープレフィックスを付与する設定
+          browsers: ["last 2 versions", "ie >= 11", "Android >= 4"],
+          cascade: false
+        })
+      ]))
+      .pipe(sourcemaps.write('../maps'))
       // cssフォルダー以下に保存
       .pipe(gulp.dest('css'))
     );
