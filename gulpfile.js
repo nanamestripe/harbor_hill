@@ -27,6 +27,7 @@ gulp.task('sass', function () {
       gulp
       .src('sass/*.scss')
       // Sassのコンパイルを実行
+      .pipe(sourcemaps.init())
       .pipe(
         sass({
           outputStyle: 'expanded'
@@ -35,7 +36,12 @@ gulp.task('sass', function () {
         // (これがないと自動的に止まってしまう)
         .on('error', sass.logError)
       )
-      .pipe(sourcemaps.init())
+      .pipe(sourcemaps.write({
+        includeContent: false
+      }))
+      .pipe(sourcemaps.init({
+        loadMaps: true
+      }))
       .pipe(postcss([
         autoprefixer({
           // ☆IEは11以上、Androidは4.4以上
