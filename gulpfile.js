@@ -49,7 +49,7 @@ gulp.task('sass', function () {
           cascade: false
         })
       ]))
-      .pipe(sourcemaps.write('css'))
+      .pipe(sourcemaps.write())
       // cssフォルダー以下に保存
       .pipe(gulp.dest('css'))
     );
