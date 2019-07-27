@@ -27,7 +27,6 @@ gulp.task('sass', function () {
       gulp
       .src('sass/*.scss')
       // Sassのコンパイルを実行
-      .pipe(sourcemaps.init())
       .pipe(
         sass({
           outputStyle: 'expanded'
@@ -46,11 +45,11 @@ gulp.task('sass', function () {
         autoprefixer({
           // ☆IEは11以上、Androidは4.4以上
           // その他は最新2バージョンで必要なベンダープレフィックスを付与する設定
-          browsers: ["last 2 versions", "ie >= 11", "Android >= 4"],
+
           cascade: false
         })
       ]))
-      .pipe(sourcemaps.write('../maps'))
+      .pipe(sourcemaps.write('./'))
       // cssフォルダー以下に保存
       .pipe(gulp.dest('css'))
     );
